@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>H.R 語録｜世界一かっこいい男の言葉</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,900&family=Shippori+Mincho+B1:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07060b; --ink:#f4f1ff; --muted:#8e88a6; --card:#100e18;
+  --gold:#ffcf5a; --gold2:#b8801f; --rose:#ff3d81;
+  --chrome:linear-gradient(100deg,#6c6a7a 0%,#fff 22%,#a9a6bd 40%,#fff 55%,#7d7a8e 75%,#e9e6ff 100%);
+  --goldg:linear-gradient(110deg,#8a5a10,#ffe08a 30%,#ffcf5a 50%,#b8801f 75%,#ffe9a8);
+  --mx:50%; --my:30%;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:light){
+  :root:not([data-theme="dark"]){--bg:#f3eee3;--ink:#15110a;--muted:#6b5f45;--card:#fffaf0;color-scheme:light;
+    --chrome:linear-gradient(100deg,#2a2833 0%,#8d8aa0 25%,#1a1822 50%,#9a97ad 75%,#2a2833 100%);}
+}
+:root[data-theme="dark"]{--bg:#07060b;--ink:#f4f1ff;--muted:#8e88a6;--card:#100e18}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;overflow-x:hidden;position:relative}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(520px circle at var(--mx) var(--my),rgba(255,207,90,.16),transparent 70%),
+             radial-gradient(900px circle at 85% 10%,rgba(255,61,129,.10),transparent 60%)}
+#sparks{position:fixed;inset:0;pointer-events:none;z-index:0}
+.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px 2px var(--gold);opacity:0;animation:rise linear infinite}
+@keyframes rise{0%{transform:translateY(0) scale(.4);opacity:0}15%{opacity:.9}100%{transform:translateY(-110vh) scale(1.2);opacity:0}}
+main,footer{position:relative;z-index:1}
+
+/* HERO */
+.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 1rem 3rem}
+.crown{font-size:clamp(1.6rem,4vw,2.6rem);filter:drop-shadow(0 0 14px var(--gold));animation:float 4s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px) rotate(-4deg)}}
+.hero small{letter-spacing:.5em;color:var(--muted);font-size:.8rem;margin:.6rem 0 0}
+h1{margin:0;font-family:"Bodoni Moda",serif;font-style:italic;font-weight:900;font-size:clamp(7rem,34vw,25rem);line-height:.9;letter-spacing:-.04em;
+  background:var(--chrome);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:sweep 5s ease-in-out infinite,enter 1.4s cubic-bezier(.2,.8,.2,1) both;
+  -webkit-box-reflect:below -.12em linear-gradient(transparent 55%,rgba(255,255,255,.22));padding:0 .08em}
+@keyframes sweep{0%,100%{background-position:0 0}50%{background-position:100% 0}}
+@keyframes enter{from{opacity:0;letter-spacing:.3em;filter:blur(18px)}to{opacity:1;letter-spacing:-.04em;filter:blur(0)}}
+.sub{margin:2.2rem 0 0;font-weight:800;font-size:clamp(1.3rem,4vw,2.4rem);background:var(--goldg);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.12em}
+.lead{color:var(--muted);margin:.8rem 0 0;font-size:clamp(.9rem,2.2vw,1.1rem);letter-spacing:.15em}
+.scroll{margin-top:3rem;color:var(--gold);font-size:.85rem;letter-spacing:.4em;animation:blink 2s infinite}
+@keyframes blink{50%{opacity:.3}}
+
+/* TICKER */
+.ticker{border-block:1px solid rgba(255,207,90,.35);overflow:hidden;white-space:nowrap;background:linear-gradient(90deg,transparent,rgba(255,207,90,.07),transparent)}
+.ticker div{display:inline-block;padding:.9rem 0;animation:tick 28s linear infinite;color:var(--gold);letter-spacing:.3em;font-weight:800}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* MIRROR */
+.mirror-wrap{padding:7rem 1rem 5rem;display:flex;flex-direction:column;align-items:center;gap:2rem}
+.mirror{width:min(92vw,640px);aspect-ratio:4/5;border-radius:50% 50% 46% 46%/38% 38% 62% 62%;padding:10px;background:var(--goldg);background-size:200% 200%;animation:shine 6s linear infinite;
+  box-shadow:0 0 80px rgba(255,207,90,.35),0 0 200px rgba(255,61,129,.2)}
+@keyframes shine{to{background-position:200% 200%}}
+.glass{width:100%;height:100%;border-radius:inherit;display:flex;align-items:center;justify-content:center;text-align:center;padding:14% 12%;
+  background:radial-gradient(circle at 30% 20%,#4a4470,#17132b 75%);color:#fff6dc;position:relative;overflow:hidden}
+.glass::after{content:"";position:absolute;inset:-50%;background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.13) 50%,transparent 58%);animation:glint 5s ease-in-out infinite}
+@keyframes glint{0%{transform:translateX(-60%)}60%,100%{transform:translateX(60%)}}
+#mirrorText{font-weight:800;font-size:clamp(1.7rem,6.4vw,3rem);line-height:1.5;margin:0;position:relative;z-index:1;color:#fff6dc;text-shadow:0 0 14px rgba(255,207,90,.85),0 0 40px rgba(255,207,90,.45)}
+#mirrorText.flash{animation:flash .6s ease}
+@keyframes flash{0%{opacity:0;filter:blur(14px);transform:scale(.9)}100%{opacity:1;filter:blur(0);transform:scale(1)}}
+.btn{font:inherit;font-weight:800;letter-spacing:.2em;color:#1a1100;background:var(--goldg);border:0;padding:1rem 2.2rem;border-radius:999px;cursor:pointer;box-shadow:0 0 30px rgba(255,207,90,.5);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:scale(1.06);box-shadow:0 0 60px rgba(255,207,90,.8)}
+.btn:focus-visible,.card:focus-visible{outline:3px solid var(--rose);outline-offset:4px}
+.cap{color:var(--muted);letter-spacing:.3em;font-size:.8rem;margin:0}
+
+/* PROFILE */
+.profile{max-width:900px;margin:0 auto;padding:3rem 1.2rem 1rem}
+.sec-title{margin:0 0 2rem;text-align:center;font-size:clamp(1.4rem,4vw,2rem);letter-spacing:.5em;color:var(--gold);font-weight:800}
+.pf{display:grid;grid-template-columns:auto 1fr;gap:2.2rem;align-items:center;padding:2.2rem;border-radius:28px;background:var(--card);border:1px solid rgba(255,207,90,.45);box-shadow:0 0 60px rgba(255,207,90,.15),inset 0 0 40px rgba(255,207,90,.05)}
+.mono{width:clamp(110px,22vw,180px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;font-family:"Bodoni Moda",serif;font-style:italic;font-weight:900;font-size:clamp(2.2rem,7vw,3.8rem);color:#fff6dc;text-shadow:0 0 16px rgba(255,207,90,.8);background:radial-gradient(circle at 30% 20%,#4a4470,#17132b 75%);box-shadow:0 0 0 4px var(--gold),0 0 44px rgba(255,207,90,.6)}
+.pf dl{margin:0}
+.pf dl>div{padding:.9rem 0;border-bottom:1px solid rgba(255,207,90,.2)}
+.pf dl>div:last-child{border-bottom:0}
+.pf dt{color:var(--gold);font-size:.8rem;letter-spacing:.3em;margin:0 0 .3rem}
+.pf dd{margin:0;font-weight:800;font-size:clamp(1.1rem,3vw,1.6rem)}
+@media (max-width:600px){.pf{grid-template-columns:1fr;justify-items:center;text-align:center}}
+
+/* LIST */
+.list{max-width:1100px;margin:0 auto;padding:3rem 1.2rem 6rem;display:grid;gap:5.5rem}
+.list h2{margin:0;text-align:center;font-size:clamp(1.4rem,4vw,2rem);letter-spacing:.5em;color:var(--gold)}
+.card{position:relative;padding:2rem 0;cursor:pointer;outline:none}
+.card .no{position:absolute;top:-1.5rem;left:0;font-family:"Bodoni Moda",serif;font-style:italic;font-weight:900;font-size:clamp(6rem,26vw,16rem);line-height:1;
+  color:transparent;-webkit-text-stroke:1.5px rgba(255,207,90,.4);z-index:-1;user-select:none}
+.card:nth-child(odd) .no{left:auto;right:0}
+.card blockquote{margin:0;padding:1.5rem 0 0 4vw;font-weight:800;font-size:clamp(2rem,8vw,5.6rem);line-height:1.25;letter-spacing:.02em;
+  background:var(--chrome);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;transition:background-position 1.2s}
+.card:hover blockquote{background-position:100% 0}
+.card:nth-child(even) blockquote{text-align:right;padding:1.5rem 4vw 0 0}
+.card .who{margin:1.4rem 0 0 4vw;display:flex;align-items:center;gap:1rem;color:var(--gold);font-family:"Bodoni Moda",serif;font-style:italic;font-weight:900;font-size:1.6rem}
+.card:nth-child(even) .who{margin:1.4rem 4vw 0 0;justify-content:flex-end}
+.who i{height:2px;width:70px;background:var(--goldg);display:block}
+.who span{font-family:"Shippori Mincho B1",serif;font-style:normal;font-size:.8rem;letter-spacing:.3em;color:var(--muted);font-weight:600}
+.meter{margin:1.2rem 4vw 0;max-width:420px;font-size:.75rem;letter-spacing:.25em;color:var(--muted)}
+.card:nth-child(even) .meter{margin-left:auto}
+.meter b{display:block;height:6px;margin-top:.5rem;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden}
+.meter b::after{content:"";display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold2),var(--gold),var(--rose));transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.card.in .meter b::after{width:100%}
+.card .reveal{opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s}
+.card.in .reveal{opacity:1;transform:none}
+.soon{text-align:center;color:var(--muted);letter-spacing:.3em;padding:2rem 1rem;border:1px dashed rgba(255,207,90,.4);border-radius:18px}
+
+footer{text-align:center;padding:4rem 1rem 5rem;color:var(--muted);font-size:.8rem;letter-spacing:.2em;line-height:2.2}
+footer strong{display:block;font-size:clamp(1.2rem,3.5vw,1.8rem);background:var(--goldg);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.3em;margin-bottom:.8rem}
+
+.pop{position:fixed;z-index:50;pointer-events:none;font-weight:800;font-size:2rem;color:var(--gold);text-shadow:0 0 18px var(--gold);animation:pop 1s ease-out forwards}
+@keyframes pop{0%{opacity:1;transform:translate(-50%,0) scale(.6) rotate(-8deg)}100%{opacity:0;transform:translate(-50%,-80px) scale(1.6) rotate(8deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.card .reveal{opacity:1;transform:none}.meter b::after{width:100%}}
+</style>
+</head>
+<body>
+<div id="sparks" aria-hidden="true"></div>
+<main>
+  <header class="hero">
+    <div class="crown" aria-hidden="true">👑</div>
+    <small>THE OFFICIAL ARCHIVE OF</small>
+    <h1>H.R</h1>
+    <p class="sub">語録</p>
+    <p class="lead">世界一かっこいい男の、世界一かっこいい言葉。</p>
+    <div class="scroll">▼ 眩しいので注意</div>
+  </header>
+
+  <div class="ticker" aria-hidden="true"><div id="tick"></div></div>
+
+  <section class="mirror-wrap" aria-label="今日の一言">
+    <p class="cap">鏡よ鏡、いちばんかっこいいのは？</p>
+    <div class="mirror"><div class="glass"><p id="mirrorText"></p></div></div>
+    <button class="btn" id="again" type="button">もう一度、俺を映す</button>
+  </section>
+
+  <section class="profile" aria-label="プロフィール">
+    <h2 class="sec-title">プロフィール</h2>
+    <div class="pf"><div class="mono" aria-hidden="true">H.R</div><dl id="pf"></dl></div>
+  </section>
+
+  <section class="list" id="list" aria-label="語録一覧">
+    <h2>全 語 録</h2>
+  </section>
+</main>
+
+<footer>
+  <strong>H.R</strong>
+  ※ このサイトのかっこよさは、本人にも測定できません。<br>
+  語録は随時追加。俺はまだ進化する、はっ。
+</footer>
+
+<script>
+/* ============================================================
+   語録はここに1行足すだけで追加できます。
+   { text:"名言", tag:"ひとこと分類（任意）" },
+   ============================================================ */
+const QUOTES = [
+  { text: "俺のほうがかっこいいぜ、はっ", tag: "自己肯定" },
+  { text: "美術に間違いはない", tag: "芸術論" },
+];
+
+/* プロフィールもここに足すだけ */
+const PROFILE = [
+  { label: "肩書き", value: "世界一かっこいい男" },
+  { label: "所属", value: "サッカー部" },
+  { label: "居住", value: "タワマン" },
+  { label: "活動", value: "東京都のイベントに企画側として参画" },
+];
+const pf = document.getElementById('pf');
+PROFILE.forEach(p => {
+  const row = document.createElement('div');
+  const dt = document.createElement('dt'); dt.textContent = p.label;
+  const dd = document.createElement('dd'); dd.textContent = p.value;
+  row.append(dt, dd); pf.appendChild(row);
+});
+
+const list = document.getElementById('list');
+const mirrorText = document.getElementById('mirrorText');
+let last = -1;
+
+QUOTES.forEach((q, i) => {
+  const el = document.createElement('article');
+  el.className = 'card'; el.tabIndex = 0;
+  const no = String(i + 1).padStart(3, '0');
+  el.innerHTML = '<div class="no" aria-hidden="true">' + no + '</div>' +
+    '<blockquote class="reveal"></blockquote>' +
+    '<div class="who reveal"><i></i>H.R<span></span></div>' +
+    '<div class="meter reveal">かっこよさ　測定不能<b></b></div>';
+  el.querySelector('blockquote').textContent = '「' + q.text + '」';
+  el.querySelector('.who span').textContent = q.tag || '';
+  el.addEventListener('click', e => pop(e.clientX, e.clientY));
+  list.appendChild(el);
+});
+const soon = document.createElement('div');
+soon.className = 'soon'; soon.textContent = 'NEXT QUOTE COMING SOON … 俺の次の一言を待て';
+list.appendChild(soon);
+
+function showMirror() {
+  let n; do { n = Math.floor(Math.random() * QUOTES.length); } while (QUOTES.length > 1 && n === last);
+  last = n;
+  mirrorText.classList.remove('flash'); void mirrorText.offsetWidth;
+  mirrorText.textContent = '「' + QUOTES[n].text + '」';
+  mirrorText.classList.add('flash');
+}
+document.getElementById('again').addEventListener('click', showMirror);
+showMirror();
+
+document.getElementById('tick').textContent =
+  Array(2).fill(QUOTES.map(q => q.text).join('　★　') + '　★　H.R　★　').join('');
+
+function pop(x, y) {
+  const s = document.createElement('span');
+  s.className = 'pop'; s.textContent = 'はっ';
+  s.style.left = x + 'px'; s.style.top = y + 'px';
+  document.body.appendChild(s);
+  setTimeout(() => s.remove(), 1000);
+}
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .25 });
+document.querySelectorAll('.card').forEach(c => io.observe(c));
+
+addEventListener('pointermove', e => {
+  document.documentElement.style.setProperty('--mx', e.clientX + 'px');
+  document.documentElement.style.setProperty('--my', e.clientY + 'px');
+});
+
+const sp = document.getElementById('sparks');
+for (let i = 0; i < 28; i++) {
+  const d = document.createElement('i'); d.className = 'spark';
+  d.style.left = Math.random() * 100 + '%'; d.style.top = (60 + Math.random() * 50) + '%';
+  d.style.animationDuration = (6 + Math.random() * 8) + 's';
+  d.style.animationDelay = (-Math.random() * 12) + 's';
+  sp.appendChild(d);
+}
+</script>
+</body>
+</html>
